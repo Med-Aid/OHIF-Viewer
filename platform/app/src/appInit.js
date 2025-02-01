@@ -48,6 +48,34 @@ async function appInit(appConfigOrFunc, defaultExtensions, defaultModes) {
   // Default the peer import function
   appConfig.peerImport ||= peerImport;
 
+  const urlSearchParams = new URLSearchParams(window.location.search);
+
+  const dataSet = urlSearchParams.get('dataSet');
+  const dataStore = urlSearchParams.get('dataStore');
+
+  appConfig.dataSources = [
+    {
+      namespace: '@ohif/extension-default.dataSourcesModule.dicomweb',
+      sourceName: 'dicomweb',
+      configuration: {
+        friendlyName: 'Clinic DICOM Server',
+        name: 'GCP',
+        wadoUriRoot: `https://healthcare.googleapis.com/v1/projects/clinic-449120/locations/us-central1/datasets/${dataSet}/dicomStores/${dataStore}/dicomWeb`,
+        qidoRoot: `https://healthcare.googleapis.com/v1/projects/clinic-449120/locations/us-central1/datasets/${dataSet}/dicomStores/${dataStore}/dicomWeb`,
+        wadoRoot: `https://healthcare.googleapis.com/v1/projects/clinic-449120/locations/us-central1/datasets/${dataSet}/dicomStores/${dataStore}/dicomWeb`,
+        qidoSupportsIncludeField: true,
+        imageRendering: 'wadors',
+        thumbnailRendering: 'wadors',
+        enableStudyLazyLoad: true,
+        supportsFuzzyMatching: true,
+        supportsWildcard: false,
+        dicomUploadEnabled: true,
+        omitQuotationForMultipartRequest: true,
+        configurationAPI: 'ohif.dataSourceConfigurationAPI.google',
+      },
+    },
+  ];
+
   const extensionManager = new ExtensionManager({
     commandsManager,
     servicesManager,
