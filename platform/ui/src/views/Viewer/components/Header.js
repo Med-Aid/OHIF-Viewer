@@ -16,7 +16,7 @@ const Header = () => {
               href="#"
               className="ml-4"
             >
-              <Icons.OHIFLogo />
+              {/* <Icons.OHIFLogo /> */}
             </a>
           </div>
         </div>

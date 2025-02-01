@@ -66,8 +66,8 @@ function Header({
             data-cy="return-to-work-list"
           >
             {isReturnEnabled && <Icons.ArrowLeft className="text-primary-active w-8" />}
-            <div className="ml-1">
-              {WhiteLabeling?.createLogoComponentFn?.(React, props) || <Icons.OHIFLogo />}
+            <div className="ml-1 text-white">
+              <span className="font-bold">MedAid</span>
             </div>
           </div>
         </div>

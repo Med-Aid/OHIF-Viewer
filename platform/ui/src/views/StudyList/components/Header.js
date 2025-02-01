@@ -18,7 +18,7 @@ function Header({ appLogo = OHIFLogo(), children, t }) {
       isSticky
     >
       <div className="flex items-center">
-        <div className="mx-3">{appLogo}</div>
+        {/* <div className="mx-3">{appLogo}</div> */}
         <div>{children}</div>
       </div>
       <div className="flex items-center">
