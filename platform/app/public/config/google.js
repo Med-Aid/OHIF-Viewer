@@ -6,22 +6,22 @@ window.config = {
   showCPUFallbackMessage: true,
   showLoadingIndicator: true,
   strictZSpacingForVolumeViewport: true,
-  oidc: [
-    {
-      authority: 'https://accounts.google.com',
-      client_id: '61487220449-ic5f6o4l2o6gdjt6mvc5g909ehupagi6.apps.googleusercontent.com',
-      redirect_uri: '/callback',
-      response_type: 'id_token token',
-      scope: 'email profile openid https://www.googleapis.com/auth/cloud-healthcare',
-      post_logout_redirect_uri: '/logout-redirect.html',
-      revoke_uri: 'https://accounts.google.com/o/oauth2/revoke?token=',
-      automaticSilentRenew: true,
-      revokeAccessTokenOnSignout: true,
-    },
-  ],
+  // oidc: [
+  //   {
+  //     authority: 'https://accounts.google.com',
+  //     client_id: '61487220449-ic5f6o4l2o6gdjt6mvc5g909ehupagi6.apps.googleusercontent.com',
+  //     redirect_uri: '/callback',
+  //     response_type: 'id_token token',
+  //     scope: 'email profile openid https://www.googleapis.com/auth/cloud-healthcare',
+  //     post_logout_redirect_uri: '/logout-redirect.html',
+  //     revoke_uri: 'https://accounts.google.com/o/oauth2/revoke?token=',
+  //     automaticSilentRenew: true,
+  //     revokeAccessTokenOnSignout: true,
+  //   },
+  // ],
   extensions: [],
   modes: [],
-  showStudyList: true,
+  showStudyList: false,
   defaultDataSourceName: 'dicomweb',
   dataSources: [
     {
