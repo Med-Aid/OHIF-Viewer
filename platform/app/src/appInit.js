@@ -50,8 +50,8 @@ async function appInit(appConfigOrFunc, defaultExtensions, defaultModes) {
 
   const urlSearchParams = new URLSearchParams(window.location.search);
 
-  const dataSet = urlSearchParams.get('dataSet');
-  const dataStore = urlSearchParams.get('dataStore');
+  const dataSet = urlSearchParams.get('dataset');
+  const dataStore = urlSearchParams.get('datastore');
 
   appConfig.dataSources = [
     {
