@@ -53,7 +53,10 @@ async function appInit(appConfigOrFunc, defaultExtensions, defaultModes) {
   const dataSet = urlSearchParams.get('dataset');
   const dataStore = urlSearchParams.get('datastore');
 
+  const previousDataSources = appConfig?.dataSources || [];
+
   appConfig.dataSources = [
+    ...previousDataSources,
     {
       namespace: '@ohif/extension-default.dataSourcesModule.dicomweb',
       sourceName: 'dicomweb',
