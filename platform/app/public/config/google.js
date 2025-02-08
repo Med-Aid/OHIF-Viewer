@@ -24,43 +24,43 @@ window.config = {
   showStudyList: false,
   defaultDataSourceName: 'dicomweb',
   dataSources: [
-    // {
-    //   namespace: '@ohif/extension-default.dataSourcesModule.dicomweb',
-    //   sourceName: 'dicomweb',
-    //   configuration: {
-    //     friendlyName: 'Clinic DICOM Server',
-    //     name: 'GCP',
-    //     wadoUriRoot:
-    //       'https://healthcare.googleapis.com/v1/projects/clinic-449120/locations/us-central1/datasets/clinic-dataset/dicomStores/clinic-dicom-store/dicomWeb',
-    //     qidoRoot:
-    //       'https://healthcare.googleapis.com/v1/projects/clinic-449120/locations/us-central1/datasets/clinic-dataset/dicomStores/clinic-dicom-store/dicomWeb',
-    //     wadoRoot:
-    //       'https://healthcare.googleapis.com/v1/projects/clinic-449120/locations/us-central1/datasets/clinic-dataset/dicomStores/clinic-dicom-store/dicomWeb',
-    //     qidoSupportsIncludeField: true,
-    //     imageRendering: 'wadors',
-    //     thumbnailRendering: 'wadors',
-    //     enableStudyLazyLoad: true,
-    //     supportsFuzzyMatching: true,
-    //     supportsWildcard: false,
-    //     dicomUploadEnabled: true,
-    //     omitQuotationForMultipartRequest: true,
-    //     configurationAPI: 'ohif.dataSourceConfigurationAPI.google',
-    //   },
-    // },
-    // {
-    //   namespace: '@ohif/extension-default.dataSourcesModule.dicomjson',
-    //   sourceName: 'dicomjson',
-    //   configuration: {
-    //     friendlyName: 'dicom json',
-    //     name: 'json',
-    //   },
-    // },
-    // {
-    //   namespace: '@ohif/extension-default.dataSourcesModule.dicomlocal',
-    //   sourceName: 'dicomlocal',
-    //   configuration: {
-    //     friendlyName: 'dicom local',
-    //   },
-    // },
+    {
+      namespace: '@ohif/extension-default.dataSourcesModule.dicomweb',
+      sourceName: 'dicomweb',
+      configuration: {
+        friendlyName: 'Clinic DICOM Server',
+        name: 'GCP',
+        wadoUriRoot:
+          'https://healthcare.googleapis.com/v1/projects/clinic-449120/locations/us-central1/datasets/clinic-dataset/dicomStores/clinic-dicom-store/dicomWeb',
+        qidoRoot:
+          'https://healthcare.googleapis.com/v1/projects/clinic-449120/locations/us-central1/datasets/clinic-dataset/dicomStores/clinic-dicom-store/dicomWeb',
+        wadoRoot:
+          'https://healthcare.googleapis.com/v1/projects/clinic-449120/locations/us-central1/datasets/clinic-dataset/dicomStores/clinic-dicom-store/dicomWeb',
+        qidoSupportsIncludeField: true,
+        imageRendering: 'wadors',
+        thumbnailRendering: 'wadors',
+        enableStudyLazyLoad: true,
+        supportsFuzzyMatching: true,
+        supportsWildcard: false,
+        dicomUploadEnabled: true,
+        omitQuotationForMultipartRequest: true,
+        configurationAPI: 'ohif.dataSourceConfigurationAPI.google',
+      },
+    },
+    {
+      namespace: '@ohif/extension-default.dataSourcesModule.dicomjson',
+      sourceName: 'dicomjson',
+      configuration: {
+        friendlyName: 'dicom json',
+        name: 'json',
+      },
+    },
+    {
+      namespace: '@ohif/extension-default.dataSourcesModule.dicomlocal',
+      sourceName: 'dicomlocal',
+      configuration: {
+        friendlyName: 'dicom local',
+      },
+    },
   ],
 };
