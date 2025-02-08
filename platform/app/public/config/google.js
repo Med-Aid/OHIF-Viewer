@@ -47,20 +47,20 @@ window.config = {
     //     configurationAPI: 'ohif.dataSourceConfigurationAPI.google',
     //   },
     // },
-    {
-      namespace: '@ohif/extension-default.dataSourcesModule.dicomjson',
-      sourceName: 'dicomjson',
-      configuration: {
-        friendlyName: 'dicom json',
-        name: 'json',
-      },
-    },
-    {
-      namespace: '@ohif/extension-default.dataSourcesModule.dicomlocal',
-      sourceName: 'dicomlocal',
-      configuration: {
-        friendlyName: 'dicom local',
-      },
-    },
+    // {
+    //   namespace: '@ohif/extension-default.dataSourcesModule.dicomjson',
+    //   sourceName: 'dicomjson',
+    //   configuration: {
+    //     friendlyName: 'dicom json',
+    //     name: 'json',
+    //   },
+    // },
+    // {
+    //   namespace: '@ohif/extension-default.dataSourcesModule.dicomlocal',
+    //   sourceName: 'dicomlocal',
+    //   configuration: {
+    //     friendlyName: 'dicom local',
+    //   },
+    // },
   ],
 };
