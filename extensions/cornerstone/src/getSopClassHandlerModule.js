@@ -33,7 +33,7 @@ function _getDisplaySetsFromSeries(instances, servicesManager, extensionManager)
     }
   }
   let imageIdForThumbnail = null;
-  const dataSource = extensionManager?.getActiveDataSource()?.[0];
+  const dataSource = extensionManager.getActiveDataSource()[0];
   if (singleFrameInstance) {
     if (currentFrames == 1) {
       // Not all DICOM server implementations support thumbnail service,

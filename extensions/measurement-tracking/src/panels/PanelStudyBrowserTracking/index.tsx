@@ -26,7 +26,7 @@ function WrappedPanelStudyBrowserTracking({
   extensionManager,
   servicesManager,
 }: withAppTypes) {
-  const dataSource = extensionManager?.getActiveDataSource()?.[0];
+  const dataSource = extensionManager.getActiveDataSource()[0];
 
   const getStudiesForPatientByMRN = _getStudyForPatientUtility(extensionManager);
   const _getStudiesForPatientByMRN = getStudiesForPatientByMRN.bind(null, dataSource);

@@ -92,7 +92,7 @@ function DataSourceWrapper(props: withAppTypes) {
     const dataSourceName = getInitialDataSourceName();
 
     if (!dataSourceName) {
-      return extensionManager?.getActiveDataSource()?.[0];
+      return extensionManager.getActiveDataSource()[0];
     }
 
     const dataSource = extensionManager.getDataSources(dataSourceName)?.[0];
@@ -128,7 +128,7 @@ function DataSourceWrapper(props: withAppTypes) {
       setIsLoading(false);
       setIsDataSourceInitialized(false);
       setDataSourcePath('');
-      setDataSource(extensionManager?.getActiveDataSource()?.[0]);
+      setDataSource(extensionManager.getActiveDataSource()[0]);
       // Setting data to DEFAULT_DATA triggers a new query just like it does for the initial load.
       setData(DEFAULT_DATA);
     };

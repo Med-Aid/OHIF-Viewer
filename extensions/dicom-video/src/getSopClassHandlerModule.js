@@ -30,7 +30,7 @@ const SupportedTransferSyntaxes = {
 const supportedTransferSyntaxUIDs = Object.values(SupportedTransferSyntaxes);
 
 const _getDisplaySetsFromSeries = (instances, servicesManager, extensionManager) => {
-  const dataSource = extensionManager?.getActiveDataSource()?.[0];
+  const dataSource = extensionManager.getActiveDataSource()[0];
   return instances
     .filter(metadata => {
       const tsuid =

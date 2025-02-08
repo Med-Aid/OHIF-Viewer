@@ -93,7 +93,7 @@ export default async function loadRTStruct(extensionManager, rtStructDisplaySet,
   const utilityModule = extensionManager.getModuleEntry(
     '@ohif/extension-cornerstone.utilityModule.common'
   );
-  const dataSource = extensionManager?.getActiveDataSource()?.[0];
+  const dataSource = extensionManager.getActiveDataSource()[0];
   const { bulkDataURI } = dataSource.getConfig?.() || {};
 
   const { dicomLoaderService } = utilityModule.exports;

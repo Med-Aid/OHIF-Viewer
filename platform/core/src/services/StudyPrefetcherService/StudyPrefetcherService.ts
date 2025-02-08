@@ -423,7 +423,7 @@ class StudyPrefetcherService extends PubSubService {
   }
 
   private _getImageIdsForDisplaySet(displaySet: DisplaySet): string[] {
-    const dataSource = this._extensionManager?.getActiveDataSource()?.[0];
+    const dataSource = this._extensionManager.getActiveDataSource()[0];
 
     return dataSource.getImageIdsForDisplaySet(displaySet);
   }

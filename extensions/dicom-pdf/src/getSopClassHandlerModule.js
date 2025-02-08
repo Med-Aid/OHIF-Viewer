@@ -10,7 +10,7 @@ const SOP_CLASS_UIDS = {
 const sopClassUids = Object.values(SOP_CLASS_UIDS);
 
 const _getDisplaySetsFromSeries = (instances, servicesManager, extensionManager) => {
-  const dataSource = extensionManager?.getActiveDataSource()?.[0];
+  const dataSource = extensionManager.getActiveDataSource()[0];
   return instances.map(instance => {
     const { Modality, SOPInstanceUID } = instance;
     const { SeriesDescription = 'PDF', MIMETypeOfEncapsulatedDocument } = instance;

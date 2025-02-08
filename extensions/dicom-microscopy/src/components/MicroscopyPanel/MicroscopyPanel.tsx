@@ -166,7 +166,7 @@ function MicroscopyPanel(props: IMicroscopyPanelProps) {
    * @returns
    */
   const saveFunction = async (SeriesDescription: string) => {
-    const dataSource = extensionManager?.getActiveDataSource()?.[0];
+    const dataSource = extensionManager.getActiveDataSource()[0];
     const { onSaveComplete } = props;
     const annotations = microscopyService.getAnnotationsForStudy(studyInstanceUID);
 
